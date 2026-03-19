@@ -1,12 +1,12 @@
 %define	pkgname	formatador
 Summary:	Ruby STDOUT text formatting
 Name:		ruby-%{pkgname}
-Version:	0.2.4
+Version:	1.2.3
 Release:	1
 License:	MIT
 Group:		Development/Languages
-Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	724e245e4b983f24723cda7d456c9bab
+Source0:	https://rubygems.org/gems/%{pkgname}-%{version}.gem
+# Source0-md5:	8750c0a3af41099017b056c320d3a403
 URL:		http://github.com/geemus/formatador
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
@@ -29,6 +29,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.rdoc changelog.txt
+%doc README.md changelog.txt
 %{ruby_vendorlibdir}/%{pkgname}.rb
 %{ruby_vendorlibdir}/%{pkgname}
